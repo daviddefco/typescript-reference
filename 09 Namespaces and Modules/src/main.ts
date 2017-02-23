@@ -1,15 +1,14 @@
-// In namespaces we group all logic that is common to a part of the program. We need to export
-// functions if we want them to be accesible out of the namespace
+// We are using validation functions from the namespace
+// defined in files under the 'Validation' folder
 
-namespace Validations {
-    export function validateLenght(s: string): boolean {
-        return s.length > 3 ? true : false
-    }
+// Importing the namespace
+/// <reference path="../validations/text-validations.ts" />
+/// <reference path="../validations/date-validations.ts" />
 
-    export function validateDate(d: Date): boolean {
-        return isNaN(d.valueOf()) ? true : false
-    }
-}
-
+// Using the namespace
 console.log( Validations.validateLenght("a long string") )
 console.log ( Validations.validateDate( new Date()) )
+
+// Importing only the PI constant from the number validation module
+import { PI } from "../validations/number-validations"
+console.log(PI)
