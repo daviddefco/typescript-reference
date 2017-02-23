@@ -1,0 +1,19 @@
+{
+  "name": "importing-libraries",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "author": "daviddefco",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.2.2"
+  },
+  "dependencies": {
+    "systemjs": "^0.20.9",
+    "jquery": "^3.1.1"
+  }
+}
