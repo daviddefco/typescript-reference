@@ -9,6 +9,7 @@
         <title>Import Third Party Libraries</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="node_modules/sweetalert/dist/sweetalert.css"/>
     </head>
     <body>
        <h1>This is a Project to Practice Library <small>Importing</small></h1> 
@@ -21,7 +22,8 @@
             SystemJS.config({
                 baseURL: '/',
                 map: {
-                    "jquery": "node_modules/jquery/dist/jquery.min.js"
+                    "jquery": "node_modules/jquery/dist/jquery.min.js",
+                    "sweetalert": "node_modules/sweetalert/dist/sweetalert.min.js"
                 },
                 defaultJSExtensions: true
             })
